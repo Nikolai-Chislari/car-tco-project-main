@@ -2,26 +2,31 @@
 <html lang="en">
 <head>
  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
  <title>TrueCost</title>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="style.css">
 </head>
-<body id ="top">
-  <p class="site-name"><strong>TrueCost</strong></p>
-  
+<body id="top">
+  <header>
+    <p class="site-name"><strong>TrueCost</strong></p>
+    <p class="page-links">
+      <a href="#costs">View costs</a>
+      <a href="#own-costs">Estimate your costs</a>
+      <a href="#compare-cars">Compare two cars</a>
+      <a href="#lower-costs">Lower your costs</a>
+    </p>
+  </header>
+
   <h1> A car costs more than its purchase price.</h1>
 
-  <p>
-   Find out how much you'll spend on fuel, insurance, maintenance, and deprecation.
-  </p>
+    <p class="intro">
+ Find out how much you'll spend on fuel, insurance, maintenance, and depreciation.
+</p>
 
   <div class="photo-background">
   <img class="car-photo" src="img/car.jpg" alt="">
 </div>
-  <p class="page-links">
-  <a href="#costs">View costs</a>
-  <a href="#own-costs">Estimate your costs</a>
-  <a href="#compare-cars">Compare two cars</a>
-</p>
 <h2 id="costs">Car Ownership Costs</h2>
 
   <table>
@@ -39,12 +44,18 @@
   </tr>
   <tr>
     <td>Maintenance</td>
-    <td>Oil changes , tires, and repairs.</td>
+    <td>Oil changes, tires, and repairs.</td>
   </tr>
   <tr>
     <td><a href="#depreciation-example">Depreciation</a></td>
     <td>How much value your car loses over time.</td>
   </tr>
+
+  <tr>
+    <td>Parking and taxes</td>
+    <td>Parking fees, tolls, and the yearly vehicle tax.</td>
+  </tr>
+
   </table>
    
   <h2>Example Annual Costs</h2>
@@ -65,6 +76,28 @@
  </p>
 
  <p>This example does not include parking, tolls, or annual vehicle taxes.</p>
+
+ <h2>Costs Over Several Years</h2>
+<p>Small yearly costs add up. Using the example above (€3,600 per year):</p>
+
+<table>
+  <tr>
+    <th>Years owned</th>
+    <th>Total cost</th>
+  </tr>
+  <tr>
+    <td>1 year</td>
+    <td>€3,600</td>
+  </tr>
+  <tr>
+    <td>3 years</td>
+    <td>€10,800</td>
+  </tr>
+  <tr>
+    <td>5 years</td>
+    <td>€18,000</td>
+  </tr>
+</table>
 
  <h2 id="fuel-example"> How We Estimated Fuel Costs</h2>
  <p class="formula"><strong>Annual fuel cost</strong> = (km driven per year ÷ 100) × liters per 100 km × price per liter.</p>
@@ -87,6 +120,15 @@
   <li>Divide the total by 12 to estimate your monthly cost.</li> 
   <li>Divide your yearly total by the number of kilometers you drive each year to estimate your cost per kilometer.</li>
  </ol>
+
+ <h2 id="lower-costs">How to Lower Your Costs</h2>
+<ul>
+  <li>Drive smoothly. Fast acceleration and hard braking use more fuel.</li>
+  <li>Check your tire pressure every month.</li>
+  <li>Compare insurance offers every year before you renew.</li>
+  <li>Choose a model that keeps its value well.</li>
+</ul>
+
  <h2 id="compare-cars">Comparing Two Cars</h2>
  <p>When comparing two cars, use the same annual mileage for both.</p>
  <table>
@@ -109,7 +151,11 @@
 
 <p><strong>Car A costs €50 less per month.</strong></p>
 
-<p><a href="#top">Back to top</a></p>
+
+<footer>
+  <p><a href="#top">Back to top</a></p>
+  <p>TrueCost: what a car really costs to own.</p>
+</footer>
   
 
 
