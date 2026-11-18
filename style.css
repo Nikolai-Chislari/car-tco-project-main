@@ -1,11 +1,8 @@
 body {
   background-color: #f5f5f5;
   color: #222222;
-  margin: 0 auto;
+  margin: 0;
   padding: 24px;
-  max-width: 1200px;
-  font-family: 'Roboto', Arial, sans-serif;
-  line-height: 1.6;
 }
 
 table{
@@ -21,8 +18,7 @@ td{
 }
 
 th{
-  background-color: #1d4e89;
-  color: white;
+  background-color: #e8e8e8;
   text-align: left;
 }
 
@@ -34,15 +30,8 @@ a:hover{
   color: #333333;
 }
 
-h1{
-  color:#1d4e89;
-  font-size: 36px;
-}
-
 .site-name{
-  color: #1d4e89;
-  font-size: 20px;
-  letter-spacing: 1px;
+  color: #1d4e89
 }
 
 li{
@@ -52,15 +41,12 @@ li{
 h2{
   margin-top: 28px;
   padding-bottom: 6px;
-  color: #1d4e89;
-  scroll-margin-top: 100px;
 }
 
 .total{
-  background-color: #e5edf8;
+  background-color: #e8e8e8;
   border-left: 3px solid #1d4e89;
   padding: 10px;
-  border-radius: 6px;
 }
 
 th:first-child{
@@ -74,16 +60,15 @@ th:first-child{
   gap: 16px;
 }
 
-.page-links a{
+.page-links a:first-child {
   background-color: #1d4e89;
   color: white;
   padding: 6px 10px;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 6px;
 }
 
-.page-links a:hover {
+.page-links a:first-child:hover {
   background-color: #153b68;
 }
 
@@ -98,7 +83,6 @@ h2:target{
 .formula {
   background-color: #e5edf8;
   padding: 10px;
-  border-radius: 6px;
 }
 
 .photo-background {
@@ -118,52 +102,5 @@ h2:target{
   min-width: 100%;
   min-height: 100%;
   flex-shrink: 0;
-  object-fit: cover;
   opacity: 0.22;
 }
-
-footer {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #555555;
-}
-
-tr:hover td {
-  background-color: #e5edf8;
-}
-
-header {
-  background-color: white;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  position: sticky;
-  top: 0;
-  border-radius: 6px;
-}
-
-.intro {
-  font-size: 20px;
-  color: #555555;
-}
-
-td a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-td a:hover {
-  text-decoration: underline;
-}
-
-
-
-
-
-
-
-
-
