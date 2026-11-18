@@ -1,157 +1,164 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta
-    name="description"
-    content="Узнайте, сколько на самом деле стоит владение автомобилем."
-  >
-  <title>Реальная стоимость автомобиля</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="style.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>TrueCost</title>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header class="site">
-    <div class="wrap nav">
-      <a class="logo" href="#top">Реальная<span>цена</span></a>
-
-      <nav aria-label="Главная навигация">
-        <ul class="nav-links">
-          <li><a href="#costs">Из чего складываются расходы</a></li>
-        </ul>
-      </nav>
-
-      <a class="nav-cta" href="#costs">Узнать расходы</a>
-    </div>
+<body id="top">
+  <header>
+    <p class="site-name"><strong>TrueCost</strong></p>
+    <p class="page-links">
+      <a href="#costs">View costs</a>
+      <a href="#own-costs">Estimate your costs</a>
+      <a href="#compare-cars">Compare two cars</a>
+      <a href="#lower-costs">Lower your costs</a>
+    </p>
   </header>
 
-  <main id="top">
-    <section class="hero wrap">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Помогаем выбрать автомобиль осознанно</p>
-          <h1>Автомобиль обходится дороже цены покупки.</h1>
-          <p class="lede">
-            Узнайте, сколько придётся потратить за годы владения:
-            на топливо, страховку, обслуживание и потерю стоимости.
-          </p>
+  <h1> A car costs more than its purchase price.</h1>
 
-          <div class="hero-actions">
-            <a class="btn-primary" href="#costs">Посмотреть расходы</a>
-            <a class="btn-secondary" href="#costs">Полная картина</a>
-          </div>
+    <p class="intro">
+ Find out how much you'll spend on fuel, insurance, maintenance, and depreciation.
+</p>
 
-          <p class="hero-note">
-            Узнайте реальную стоимость до покупки.
-          </p>
-        </div>
+  <div class="photo-background">
+  <img class="car-photo" src="img/car.jpg" alt="">
+</div>
+<h2 id="costs">Car Ownership Costs</h2>
 
-        <div class="cluster" aria-label="Пример расходов на автомобиль">
-          <div class="cluster-label">
-            <span>ПРИМЕР · 5 ЛЕТ</span>
-            <span>ОЦЕНКА</span>
-          </div>
+  <table>
+  <tr>
+    <th>Expense</th>
+    <th>What to consider</th>
+  </tr>
+  <tr>
+    <td><a href="#fuel-example">Fuel</a></td>
+    <td>How far you drive and how much fuel costs.</td>
+  </tr>
+  <tr>
+    <td>Insurance</td>
+    <td>How much you pay for insurance each year.</td>
+  </tr>
+  <tr>
+    <td>Maintenance</td>
+    <td>Oil changes, tires, and repairs.</td>
+  </tr>
+  <tr>
+    <td><a href="#depreciation-example">Depreciation</a></td>
+    <td>How much value your car loses over time.</td>
+  </tr>
 
-          <div class="cluster-readout">2 380 000 ₽</div>
-          <p class="cluster-sub">
-            Расходы за 5 лет с учётом перепродажи автомобиля
-          </p>
+  <tr>
+    <td>Parking and taxes</td>
+    <td>Parking fees, tolls, and the yearly vehicle tax.</td>
+  </tr>
 
-          <div class="cluster-bars">
-            <div class="cluster-bar-row">
-              <span class="name">Потеря стоимости</span>
-              <span class="cluster-bar-track">
-                <span class="cluster-bar-fill" style="--bar-width:38%"></span>
-              </span>
-              <span class="pct">38%</span>
-            </div>
+  </table>
+   
+  <h2>Example Annual Costs</h2>
 
-            <div class="cluster-bar-row">
-              <span class="name">Топливо</span>
-              <span class="cluster-bar-track">
-                <span class="cluster-bar-fill" style="--bar-width:27%"></span>
-              </span>
-              <span class="pct">27%</span>
-            </div>
+  <p>Your annual costs depend on the car you choose and how much you drive.</p>
 
-            <div class="cluster-bar-row">
-              <span class="name">Обслуживание</span>
-              <span class="cluster-bar-track">
-                <span class="cluster-bar-fill" style="--bar-width:21%"></span>
-              </span>
-              <span class="pct">21%</span>
-            </div>
+  <ul>
+    <li>Fuel: €1,200</li>
+    <li>Insurance: €500</li>
+    <li>Maintenance: €400</li>
+    <li>Depreciation: €1,500</li>
+  </ul>
 
-            <div class="cluster-bar-row">
-              <span class="name">Страховка</span>
-              <span class="cluster-bar-track">
-                <span class="cluster-bar-fill" style="--bar-width:14%"></span>
-              </span>
-              <span class="pct">14%</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <p class="total">
+  <strong>Total: €3,600 per year</strong><br>
+  Average monthly cost: €300<br>
+  Average cost per kilometer: €0.36
+ </p>
 
-    <section class="section wrap" id="costs">
-      <div class="section-head">
-        <p class="eyebrow">Полная картина</p>
-        <h2>Четыре расхода, о которых стоит знать до покупки</h2>
-        <p>
-          Цена в объявлении — только начало.
-          Повседневные расходы на автомобиль со временем накапливаются.
-        </p>
-      </div>
+ <p>This example does not include parking, tolls, or annual vehicle taxes.</p>
 
-      <div class="panels">
-        <article class="panel">
-          <span class="panel-index">01</span>
-          <h3>Топливо</h3>
-          <p>
-            Расходы зависят от годового пробега,
-            экономичности автомобиля и цены топлива.
-          </p>
-        </article>
+ <h2>Costs Over Several Years</h2>
+<p>Small yearly costs add up. Using the example above (€3,600 per year):</p>
 
-        <article class="panel">
-          <span class="panel-index">02</span>
-          <h3>Страховка</h3>
-          <p>Учтите примерную стоимость страхового полиса за год.</p>
-        </article>
+<table>
+  <tr>
+    <th>Years owned</th>
+    <th>Total cost</th>
+  </tr>
+  <tr>
+    <td>1 year</td>
+    <td>€3,600</td>
+  </tr>
+  <tr>
+    <td>3 years</td>
+    <td>€10,800</td>
+  </tr>
+  <tr>
+    <td>5 years</td>
+    <td>€18,000</td>
+  </tr>
+</table>
 
-        <article class="panel">
-          <span class="panel-index">03</span>
-          <h3>Обслуживание</h3>
-          <p>Плановое обслуживание, шины и неожиданный ремонт.</p>
-        </article>
+ <h2 id="fuel-example"> How We Estimated Fuel Costs</h2>
+ <p class="formula"><strong>Annual fuel cost</strong> = (km driven per year ÷ 100) × liters per 100 km × price per liter.</p>
+ <p>
+  If you drive 10,000 km a year and your car uses 6 liters per 100 km, you need 600 liters of fuel. At €2 per liter, that adds up to €1,200 per year.
+ </p>
 
-        <article class="panel">
-          <span class="panel-index">04</span>
-          <h3>Потеря стоимости</h3>
-          <p>
-            Учтите, насколько автомобиль может подешеветь
-            к моменту продажи.
-          </p>
-        </article>
-      </div>
-    </section>
-  </main>
+ <h2 id="depreciation-example">How We Estimated Depreciation</h2>
+ <p class="formula"><strong>Average annual depreciation</strong> = (purchase price − resale price) ÷ years owned.</p>
+ <p>
+  If you buy a car for €12,000 and sell it for €7,500 after three years,
+  it loses €4,500 in value. That's an average of €1,500 per year.
+ </p>
 
-  <footer class="site wrap">
-    <span>Реальная цена · Планирование расходов на автомобиль</span>
-    <span>Выбирайте следующий автомобиль уверенно.</span>
-  </footer>
+ <h2 id="own-costs">Estimate Your Own Costs</h2>
+ <ol>
+  <li>Write down your yearly fuel, insurance, and maintenance costs.</li>
+  <li>Add the amount you expect your car to lose in value each year.</li>
+  <li>Include any yearly costs for parking, tolls, and vehicle taxes.</li>
+  <li>Divide the total by 12 to estimate your monthly cost.</li> 
+  <li>Divide your yearly total by the number of kilometers you drive each year to estimate your cost per kilometer.</li>
+ </ol>
+
+ <h2 id="lower-costs">How to Lower Your Costs</h2>
+<ul>
+  <li>Drive smoothly. Fast acceleration and hard braking use more fuel.</li>
+  <li>Check your tire pressure every month.</li>
+  <li>Compare insurance offers every year before you renew.</li>
+  <li>Choose a model that keeps its value well.</li>
+</ul>
+
+ <h2 id="compare-cars">Comparing Two Cars</h2>
+ <p>When comparing two cars, use the same annual mileage for both.</p>
+ <table>
+  <tr>
+    <th>Car</th>
+    <th>Cost per year</th>
+    <th>Average cost per month</th>
+  </tr>
+  <tr>
+    <td>Car A</td>
+    <td>€3,600</td>
+    <td>€300</td>
+  </tr>
+  <tr>
+    <td>Car B</td>
+    <td>€4,200</td>
+    <td>€350</td>
+  </tr>
+</table>
+
+<p><strong>Car A costs €50 less per month.</strong></p>
+
+
+<footer>
+  <p><a href="#top">Back to top</a></p>
+  <p>TrueCost: what a car really costs to own.</p>
+</footer>
+  
+
+
 </body>
+
 </html>
