@@ -23,6 +23,14 @@ body {
   grid-template-columns: 30% 1fr 1.65fr;
 }
 
+.even-columns .row{
+  grid-template-columns: 30% 1fr 1fr;
+}
+
+.sum-row .cell{
+  font-weight: bold;
+}
+
 .cell{
   border-right: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
@@ -165,16 +173,24 @@ header {
   text-decoration: underline;
 }
 
+@media (max-width: 1100px) {
+  h2 {
+    scroll-margin-top: 240px;
+  }
+}
+
 @media (max-width: 600px) {
+
 
   body {
     padding: 16px;
   }
 
   header {
-    padding: 8px 12px;
-    flex-direction: column;
-    align-items: stretch;
+   padding: 8px 12px;
+   flex-direction: column;
+   align-items: stretch;
+   position: static;
   }
 
   .site-name {
@@ -199,6 +215,10 @@ header {
     text-align: center;
   }
 
+  .page-links a:last-child {
+    grid-column: span 2;
+  }
+
   h1 {
     font-size: 26px;
     line-height: 1.3;
@@ -206,7 +226,7 @@ header {
 
   h2 {
     font-size: 21px;
-    scroll-margin-top: 190px;
+    scroll-margin-top: 16px;
   }
 
   .intro {
@@ -227,3 +247,12 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+
+
+
+
+
+
+
+
