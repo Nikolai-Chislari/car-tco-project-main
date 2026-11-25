@@ -17,6 +17,15 @@
       <a href="#lower-costs">Lower your costs</a>
       <a href="#petrol-electric">Petrol vs electric</a>
     </p>
+
+    <details class="mobile-menu">
+      <summary><strong>TrueCost</strong> <span>☰</span></summary>
+      <a href="#costs" onclick="this.parentElement.open = false">View costs</a>
+      <a href="#own-costs" onclick="this.parentElement.open = false">Estimate your costs</a>
+      <a href="#compare-cars" onclick="this.parentElement.open = false">Compare two cars</a>
+      <a href="#lower-costs" onclick="this.parentElement.open = false">Lower your costs</a>
+      <a href="#petrol-electric" onclick="this.parentElement.open = false">Petrol vs electric</a>
+    </details>
   </header>
 
   <h1> A car costs more than its purchase price.</h1>
@@ -63,11 +72,27 @@
 
   <p>Your annual costs depend on the car you choose and how much you drive.</p>
 
-  <ul>
-    <li>Fuel: €1,200</li>
-    <li>Insurance: €500</li>
-    <li>Maintenance: €400</li>
-    <li>Depreciation: €1,500</li>
+  <ul class="cards">
+    <li class="card">
+      <span class="card-icon">⛽</span>
+      <span class="card-title">Fuel</span>
+      <span class="card-value">€1,200</span>
+    </li>
+    <li class="card">
+      <span class="card-icon">🛡️</span>
+      <span class="card-title">Insurance</span>
+      <span class="card-value">€500</span>
+    </li>
+    <li class="card">
+      <span class="card-icon">🔧</span>
+      <span class="card-title">Maintenance</span>
+      <span class="card-value">€400</span>
+    </li>
+    <li class="card">
+      <span class="card-icon">📉</span>
+      <span class="card-title">Depreciation</span>
+      <span class="card-value">€1,500</span>
+    </li>
   </ul>
 
   <p class="total">
@@ -123,11 +148,27 @@
  </ol>
 
  <h2 id="lower-costs">How to Lower Your Costs</h2>
-<ul>
-  <li>Drive smoothly. Fast acceleration and hard braking use more fuel.</li>
-  <li>Check your tire pressure every month.</li>
-  <li>Compare insurance offers every year before you renew.</li>
-  <li>Choose a model that keeps its value well.</li>
+<ul class="cards tips">
+  <li class="card">
+    <span class="card-icon">🚗</span>
+    <span class="card-title">Drive smoothly</span>
+    <p>Fast acceleration and hard braking use more fuel.</p>
+  </li>
+  <li class="card">
+    <span class="card-icon">🛞</span>
+    <span class="card-title">Check your tires</span>
+    <p>Check your tire pressure every month.</p>
+  </li>
+  <li class="card">
+    <span class="card-icon">📄</span>
+    <span class="card-title">Compare insurance</span>
+    <p>Compare insurance offers every year before you renew.</p>
+  </li>
+  <li class="card">
+    <span class="card-icon">💰</span>
+    <span class="card-title">Keep the value</span>
+    <p>Choose a model that keeps its value well.</p>
+  </li>
 </ul>
 
  <h2 id="compare-cars">Comparing Two Cars</h2>
@@ -151,7 +192,8 @@
 </div>
 
 <p><strong>Car A costs €50 less per month.</strong></p>
-<h2 id="petrol-electric">Petrol vs Electric</h2>
+
+ <h2 id="petrol-electric">Petrol vs Electric</h2>
  <p>Both cars are driven 10,000 km per year. The numbers are examples.</p>
  <div class="table three-columns even-columns">
   <div class="row head">
@@ -163,7 +205,7 @@
     <div class="cell">Fuel or electricity</div>
     <div class="cell">€1,200</div>
     <div class="cell">€510</div>
-    </div>
+  </div>
   <div class="row">
     <div class="cell">Insurance</div>
     <div class="cell">€500</div>
@@ -187,18 +229,15 @@
  </div>
 
  <p class="formula"><strong>Electricity cost</strong> = (km driven per year ÷ 100) × kWh per 100 km × price per kWh.<br>
-  Example: (10,000 ÷ 100) × 17 kWh × €0.30 = €510 per year.</p>
-  <p>An electric car is cheaper to drive and to service, but it usually costs more to buy and loses more value in the first years.</p>
+ Example: (10,000 ÷ 100) × 17 kWh × €0.30 = €510 per year.</p>
+
+ <p>An electric car is cheaper to drive and to service, but it usually costs more to buy and loses more value in the first years.</p>
 
 
- 
 <footer>
   <p><a href="#top">Back to top</a></p>
   <p>TrueCost: what a car really costs to own.</p>
 </footer>
-  
-
 
 </body>
-
 </html>
