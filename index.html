@@ -9,6 +9,7 @@
 </head>
 <body id="top">
   <header>
+    <div class="container header-inner">
     <p class="site-name"><strong>TrueCost</strong></p>
     <p class="page-links">
       <a href="#costs">View costs</a>
@@ -26,13 +27,16 @@
       <a href="#lower-costs" onclick="this.parentElement.open = false">Lower your costs</a>
       <a href="#petrol-electric" onclick="this.parentElement.open = false">Petrol vs electric</a>
     </details>
+    </div>
   </header>
 
-  <h1> A car costs more than its purchase price.</h1>
+  <main class="container">
 
-    <p class="intro">
- Find out how much you'll spend on fuel, insurance, maintenance, and depreciation.
-</p>
+  <section class="hero">
+    <h1>A car costs more than its purchase price.</h1>
+    <p class="intro">Find out how much you'll spend on fuel, insurance, maintenance, and depreciation.</p>
+    <a href="#costs" class="hero-button">View costs</a>
+  </section>
 
   <div class="photo-background">
   <img class="car-photo" src="img/car.jpg" alt="">
@@ -204,27 +208,27 @@
   <div class="row">
     <div class="cell">Fuel or electricity</div>
     <div class="cell">€1,200</div>
-    <div class="cell">€510</div>
+    <div class="cell cheaper">€510</div>
   </div>
   <div class="row">
     <div class="cell">Insurance</div>
     <div class="cell">€500</div>
-    <div class="cell">€600</div>
+    <div class="cell pricier">€600</div>
   </div>
   <div class="row">
     <div class="cell">Maintenance</div>
     <div class="cell">€400</div>
-    <div class="cell">€250</div>
+    <div class="cell cheaper">€250</div>
   </div>
   <div class="row">
     <div class="cell">Depreciation</div>
     <div class="cell">€1,500</div>
-    <div class="cell">€2,000</div>
+    <div class="cell pricier">€2,000</div>
   </div>
   <div class="row sum-row">
     <div class="cell">Total per year</div>
     <div class="cell">€3,600</div>
-    <div class="cell">€3,360</div>
+    <div class="cell cheaper">€3,360</div>
   </div>
  </div>
 
@@ -233,10 +237,19 @@
 
  <p>An electric car is cheaper to drive and to service, but it usually costs more to buy and loses more value in the first years.</p>
 
+  </main>
 
 <footer>
-  <p><a href="#top">Back to top</a></p>
-  <p>TrueCost: what a car really costs to own.</p>
+  <div class="container footer-inner">
+    <p class="site-name"><strong>TrueCost</strong><br><span>What a car really costs to own.</span></p>
+    <p class="footer-links">
+      <a href="#costs">View costs</a>
+      <a href="#own-costs">Estimate your costs</a>
+      <a href="#compare-cars">Compare two cars</a>
+      <a href="#petrol-electric">Petrol vs electric</a>
+      <a href="#top">Back to top ↑</a>
+    </p>
+  </div>
 </footer>
 
 </body>
