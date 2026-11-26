@@ -1,11 +1,15 @@
 body {
   background-color: #f5f5f5;
   color: #222222;
-  margin: 0 auto;
-  padding: 24px;
-  max-width: 1200px;
+  margin: 0;
   font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.6;
+}
+
+.container{
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .table{
@@ -137,9 +141,50 @@ h2:target{
 }
 
 footer {
-  margin-top: 40px;
+  background-color: #1c2633;
+  margin-top: 60px;
+  padding: 24px 0;
   font-size: 14px;
   color: #555555;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-inner span {
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: normal;
+  color: #a9b3c1;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.cheaper {
+  color: #5fd38a;
+  font-weight: bold;
+}
+
+.pricier {
+  color: #f07b7b;
+  font-weight: bold;
 }
 
 .row:not(.head):hover .cell {
@@ -148,16 +193,18 @@ footer {
 
 header {
   background-color: white;
-  padding: 10px 20px;
+  padding: 10px 0;
   margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  border-radius: 6px;
 }
 
 .mobile-menu{
@@ -241,18 +288,15 @@ header {
 
 @media (max-width: 600px) {
 
-  body {
-    padding: 16px;
+  .container {
+    padding: 0 16px;
   }
 
   header {
-    padding: 8px 12px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    padding: 8px 0;
   }
 
-  .site-name,
+  header .site-name,
   .page-links {
     display: none;
   }
@@ -318,5 +362,100 @@ header {
 
   .three-columns .row {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+body {
+  background-color: #121a24;
+  color: #e6e9ee;
+}
+
+header,
+.table,
+.card {
+  background-color: #1c2633;
+}
+
+.table,
+.cell,
+.card {
+  border-color: #34404f;
+}
+
+h1,
+h2,
+a,
+.site-name,
+.card-title,
+.mobile-menu summary {
+  color: #8db8f0;
+}
+
+.row:nth-child(even) .cell {
+  background-color: #18212c;
+}
+
+.row:not(.head):hover .cell {
+  background-color: #243246;
+}
+
+.total,
+.formula,
+h2:target {
+  background-color: #1f3048;
+}
+
+.intro,
+footer {
+  color: #a9b3c1;
+}
+
+.car-photo {
+  opacity: 0.08;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(29, 78, 137, 0.88), rgba(18, 26, 36, 0.92)), url("img/car.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 70px 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 44px;
+  margin-top: 0;
+}
+
+.hero .intro {
+  color: #d6e3f5;
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: white;
+  color: #1d4e89;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
   }
 }
